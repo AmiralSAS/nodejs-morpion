@@ -1,0 +1,73 @@
+﻿<html>
+	<head>
+		<meta charset="utf8">
+		<title>Morpion orienté objet</title>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/grid.css" />
+		<link rel="stylesheet" href="./css/animations.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body class="container_12">	
+		<div class="grid_12">
+			<h1>Morpion multijoueur</h1>
+		</div>
+		<div class="clear"></div>
+<!-- ********************************** -->
+		<div class="grid_4">
+			<h2>Règles</h2>
+			<p>Jeu tour par tour où le premier joueur qui aligne trois cases identique (sur lignes, colonnes ou diagonales) remporte la partie.
+			</p>
+			<p>Optimisé pour Firefox 19.0.2.
+			</p>
+		</div>
+
+<!-- ********************************** -->
+		<div class="grid_4">
+			<h2>Partie</h2>
+			<div id="container_jeu">
+				<div id="jeu">
+				
+				</div>
+			</div>
+		</div>
+<!-- ********************************** -->
+		<div class="grid_4">
+			<h2>Joueur actif</h2>
+			<div id="joueur1" class="joueur_actif">
+				<p>
+					<span class="cube bleu"></span><span id="player1">Joueur 1</span>
+				</p>
+			</div>
+			<div id="joueur2">
+				<p>
+					<span class="cube cyan"></span><span id="player2">Joueur 2</span>
+				</p>
+			</div>
+		</div>
+
+<!-- ********************************** -->
+
+		<div id="pauseCache" class="cache"></div>
+		<div id="fin_de_partie" class="cache">
+			<form action="" id="fin_de_partie_ecran">
+				<h2>Partie terminée</h2>
+				<p id="resultat">
+				</p>
+				<input type="submit" value="Recommencer une nouvelle partie" id="boutonReset" />
+			</form>
+		</div>
+
+<!-- ********************************** -->
+
+		<script src="./js/jquery-1.9.1.js"></script>
+		<script src="./js/mustache.js"></script>
+		<script src="./js/prototype-1.7.1.js"></script>
+		<script src="http://localhost/socket.io/socket.io.js"></script>
+		<!--<script src="./js/initialisation.js"></script>-->
+		<script src="./js/Classes/class_case.js"></script>
+		<script src="./js/morpion_client.js"></script>
+
+<!-- ********************************** -->
+
+	</body>
+</html>

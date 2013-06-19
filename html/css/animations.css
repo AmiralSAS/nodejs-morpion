@@ -1,0 +1,98 @@
+﻿@charset "UTF-8";
+
+/***************************/
+/* Animation de la couleur */
+/***************************/
+/*****************************************/
+/* Liste des éléments devant être animés */
+/*****************************************/
+.actif{
+	background-color:#000;
+}
+/* Spécification du temps d'animation des cases lors du retour à la normale*/
+.rouge, 
+.vert, 
+.bleu, 
+.jaune, 
+.cyan, 
+.magenta{
+	-moz-transition: all .8s; 
+    -webkit-transition: all .8s; 
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+/* Spécification du temps d'animation des cases au survol */
+.rouge:hover, 
+.vert:hover, 
+.bleu:hover, 
+.jaune:hover, 
+.cyan:hover, 
+.magenta:hover{
+	-moz-transition: all .4s; 
+    -webkit-transition: all .4s; 
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+/************************************************/
+/************************************************/
+/* CASE *****************************************/
+/************************************************/
+/************************************************/
+.vierge{
+	cursor:pointer;
+	-moz-transition: all .7s; 
+    -webkit-transition: all .7s; 
+    -o-transition: all .7s;
+    transition: all .7s;
+}
+.vierge:active{
+	background-color:#444;
+	-moz-transition: all .0s; 
+    -webkit-transition: all .0s; 
+    -o-transition: all .0s;
+    transition: all .0s;
+}
+.vierge:hover:not(:active){
+	border-color:#0f0;
+	-moz-transition: all .2s; 
+    -webkit-transition: all .2s; 
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+/************************************************/
+/************************************************/
+/* JEU ******************************************/
+/************************************************/
+/************************************************/
+#container_jeu{
+	-moz-transition: all .7s; 
+    -webkit-transition: all .7s; 
+    -o-transition: all .7s;
+    transition: all .7s;
+}
+#container_jeu:hover{
+	box-shadow: 0px 0px 60px rgba(0,255,255,.5);
+	-moz-transition: all .4s; 
+    -webkit-transition: all .4s; 
+    -o-transition: all .4s;
+    transition: all 0.4s;
+}
+
+/************************************************/
+/************************************************/
+/* fin_de_partie ********************************/
+/************************************************/
+/************************************************/
+#fin_de_partie_form > input{
+	-moz-transition: all .7s; 
+    -webkit-transition: all .7s; 
+    -o-transition: all .7s;
+	transition: all .7s;}
+#fin_de_partie_form > input:hover{
+	box-shadow: 0px 0px 60px rgba(0,255,255,.5);
+	-moz-transition: all .2s; 
+    -webkit-transition: all .2s; 
+    -o-transition: all .2s;
+	transition: all .2s;}
