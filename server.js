@@ -35,8 +35,17 @@ function index(route, handle){
 		}
 
 		var contenu = {};
-	
+		// var dataPre;
 		socket.on('endTurn', function(data){
+			// if (dataPre) {
+			// 	if (!chechData(dataPre,data)) {
+			// 		// vérifier joueur du tour
+			// 		// controle des cases existante
+			// 		// vérifier qu'il n'y a pas plus d'une case de joué
+			// 		return "triche !";
+			// 	}
+			// }
+			// dataPre = data;
 			io.sockets.emit('changeTurn', data);
 		});
 

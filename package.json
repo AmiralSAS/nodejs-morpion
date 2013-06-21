@@ -7,8 +7,8 @@
 		"colors":"0.6.x",
 		"formidable":"1.0.13",
 		"prototype":"0.0.5",
-		"socket.io":"0.9.13"
-		"socket.io-client":"0.9.13"
+		"socket.io":"0.9.13",
+		"socket.io-client":"latest"
 	},
 	"engines":{
 		"node":"0.10.1"
