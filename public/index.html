@@ -12,7 +12,7 @@
 			<h1>Morpion multijoueur</h1>
 		</div>
 		<div class="clear"></div>
-<!-- ********************************** -->
+<!-- Menu -->
 		<div class="grid_4">
 			<h2>Règles</h2>
 			<p>Jeu tour par tour où le premier joueur qui aligne trois cases identique (sur lignes, colonnes ou diagonales) remporte la partie.
@@ -21,7 +21,7 @@
 			</p>
 		</div>
 
-<!-- ********************************** -->
+<!-- Game -->
 		<div class="grid_4">
 			<h2>Partie</h2>
 			<div id="container_jeu">
@@ -30,7 +30,8 @@
 				</div>
 			</div>
 		</div>
-<!-- ********************************** -->
+		
+<!-- Right -->
 		<div class="grid_4">
 			<h2>Joueur actif</h2>
 			<div id="joueur1" class="joueur_actif">
@@ -45,8 +46,7 @@
 			</div>
 		</div>
 
-<!-- ********************************** -->
-
+<!-- Cache -->
 		<div id="pauseCache" class="cache"></div>
 		<div id="fin_de_partie" class="cache">
 			<form action="" id="fin_de_partie_ecran">
@@ -57,17 +57,13 @@
 			</form>
 		</div>
 
-<!-- ********************************** -->
-
-		<script src="./js/jquery-1.9.1.js"></script>
-		<script src="./js/mustache.js"></script>
-		<script src="./js/prototype-1.7.1.js"></script>
+<!-- Scritps -->
+		<script src="./js/vendor/jquery-1.9.1.js"></script>
+		<script src="./js/vendor/mustache.js"></script>
+		<script src="./js/vendor/prototype-1.7.1.js"></script>
 		<script src="http://localhost/socket.io/socket.io.js"></script>
 		<!--<script src="./js/initialisation.js"></script>-->
 		<script src="./js/Classes/class_case.js"></script>
 		<script src="./js/morpion_client.js"></script>
-
-<!-- ********************************** -->
-
 	</body>
 </html>

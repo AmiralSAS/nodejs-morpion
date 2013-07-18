@@ -2,10 +2,11 @@
 	"name":"nodejs-morpion",
 	"author":"AmiralSAS",
 	"description":"morpion-game",
-	"version":"0.0.1",
+	"version":"0.0.2",
 	"dependencies":{
 		"colors":"0.6.x",
 		"formidable":"1.0.13",
+		"express":"3.3.4",
 		"prototype":"0.0.5",
 		"socket.io":"0.9.13",
 		"socket.io-client":"latest"
