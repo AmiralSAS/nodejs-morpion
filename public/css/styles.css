@@ -1,13 +1,8 @@
 @charset "UTF-8";
 
 html{
-	background-color: #565;
 	height:100%;}
 	body {
-		font-family: arial, sans-serif;
-		font-size: 16px;
-		font-style: normal;
-		color: #ddd;
 		height:100%;}
 		h1,h2,h3,h4{
 			color: #ddd;
@@ -21,11 +16,13 @@ html{
 }
 
 #view_menu{
-	display: block;
-}
+	display: block;}
 	#menu_container{}
-		#menu_container input[type="button"]{
-			margin: 0 auto;
+		#menu_container a{
+			width: 256px;
+			border-radius: 32px;
+			text-align: center;
+			margin: 10px auto;
 			display: block;}
 #view_game {}
 #view_options {}
@@ -137,4 +134,16 @@ html{
 	margin-bottom: -10px;
 	display: inline-block;
 	border: 1px solid black;
+}
+
+/*************************/
+/* Styles for buttons */
+.button-red{
+	background-color: #655;
+}
+.button-yellow{
+	background-color: #665;
+}
+.button-green{
+	background-color: #565;
 }
