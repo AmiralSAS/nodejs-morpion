@@ -1,40 +1,46 @@
 ﻿<html ng-app="">
-	<head>
-		<meta charset="utf8">
-		<title>Morpion orienté objet</title>
-		<link rel="stylesheet" href="./css/normalize.css" />
-		<link rel="stylesheet" href="./css/grid.css" />
-		<link rel="stylesheet" href="./css/animations.css" />
-		<link rel="stylesheet" href="./css/styles.css" />
-	</head>
-	<body ng-controller="Ctrl" class="container_12">
+    <head>
+        <meta charset="utf8">
+        <title>NodeJS Morpion</title>
+        <link rel="stylesheet" href="./css/normalize.css" />
+        <link rel="stylesheet" href="./css/grid.css" />
+        <link rel="stylesheet" href="./css/animations.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body ng-controller="Ctrl" class="container_12">
 
-		<div id="view_menu" ng-include src="templateMenu.url">
-		</div>
-		
-		<div id="view_game" ng-include src="templateGame.url">
-		</div>
+        <div ng-include src="templateMenu" id="view_menu" class="view activeView">
+        </div>
+       
+        <div ng-include src="templateGame" id="view_game" class="view">
+        </div>
 
-<!-- Cache -->
-		<div id="pauseCache" class="cache"></div>
-		<div id="fin_de_partie" class="cache">
-			<form action="" id="fin_de_partie_ecran">
-				<h2>Partie terminée</h2>
-				<p id="resultat">
-				</p>
-				<input type="submit" value="Recommencer une nouvelle partie" id="boutonReset" />
-			</form>
-		</div>
+        <div ng-include src="templateRules" id="view_rules" class="view">
+        </div>
+
+        <div ng-include src="templateOptions" id="view_options" class="view">
+        </div>
+
+<!-- Caches -->
+        <div id="pauseCache" class="cache"></div>
+        <div id="fin_de_partie" class="cache">
+            <form action="" id="fin_de_partie_ecran">
+                <h2>Partie terminée</h2>
+                <p id="resultat">
+                </p>
+                <input type="submit" value="Recommencer une nouvelle partie" id="boutonReset" />
+            </form>
+        </div>
 
 <!-- Scripts -->
-		<script src="./js/vendor/jquery-1.9.1.js"></script>
-		<script src="./js/vendor/mustache.js"></script>
-		<script src="./js/vendor/prototype-1.7.1.js"></script>
-		<script src="./js/vendor/angular-1.0.6.js"></script>
+        <script src="./js/vendor/jquery-1.9.1.js"></script>
+        <script src="./js/vendor/mustache.js"></script>
+        <script src="./js/vendor/prototype-1.7.1.js"></script>
+        <script src="./js/vendor/angular-1.0.6.js"></script>
 
-		<script src="http://localhost/socket.io/socket.io.js"></script>
-		<script src="./js/Classes/class_case.js"></script>
-		<script src="./js/morpion_client.js"></script>
-		<script src="./js/interface.js"></script>
-	</body>
+        <script src="http://localhost/socket.io/socket.io.js"></script>
+        <script src="./js/Classes/class_case.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/interface.js"></script>
+    </body>
 </html>
