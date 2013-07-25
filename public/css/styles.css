@@ -16,11 +16,19 @@ html{
 
 /*************************/
 
-#view_game {
-}
-#view_menu{
+.view{
 	display: none;
 }
+
+#view_menu{
+	display: block;
+}
+	#menu_container{}
+		#menu_container input[type="button"]{
+			margin: 0 auto;
+			display: block;}
+#view_game {}
+#view_options {}
 
 /*************************/
 
@@ -105,6 +113,7 @@ html{
 /*************************/
 
 .cache{
+	display: none;
 	background-color:rgba(0, 0, 0, 0.8);
 	position:absolute;
 	top:0;
