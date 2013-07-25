@@ -1,0 +1,18 @@
+{
+    "name":"nodejs-morpion",
+    "author":"AmiralSAS",
+    "description":"morpion-game",
+    "version":"0.0.2",
+    "main": "index.html",
+    "window": {
+        "frame": false,
+        "fullscreen":true,
+        "resizable": false,
+        "x": 0,
+        "y": 0,
+        "toolbar":false,
+        "width":960,
+        "height":600,
+        "kiosk": true
+    }
+}
