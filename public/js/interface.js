@@ -1,8 +1,10 @@
 ﻿function Ctrl($scope) {    
-    $scope.templateMenu    = './partials/menu.html';
-    $scope.templateGame    = './partials/game.html';
-    $scope.templateOptions = './partials/options.html';
-    $scope.templateRules   = './partials/rules.html';
+    $scope.templateMenu             = './partials/menu.html';
+    $scope.templateGame             = './partials/game.html';
+    $scope.templateJoinNetGame      = './partials/join_netgame.html';
+    $scope.templateCreateNetGame    = './partials/create_netgame.html';
+    $scope.templateOptions          = './partials/options.html';
+    $scope.templateRules            = './partials/rules.html';
 }
 
 jQuery(function ($){
@@ -10,8 +12,8 @@ jQuery(function ($){
     
     $('body').on('click', '.changeViewButton', function(event){
         var target = "view_" + $(this).attr("data-viewTarget");
-        $(".activeView").removeClass("activeView").fadeOut(300, function(){
-            $("#" + target).addClass("activeView").fadeIn(300);
+        $(".activeView").removeClass("activeView").fadeOut(100, function(){
+            $("#" + target).addClass("activeView").fadeIn(100);
         });
     });
 

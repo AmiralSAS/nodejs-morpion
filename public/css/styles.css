@@ -2,12 +2,21 @@
 
 html{
 	height:100%;}
-	body {
-		height:100%;}
-		h1,h2,h3,h4{
-			color: #ddd;
-			border-bottom: 1px dashed #ddd;
-			text-align: center;}
+body {
+	color: #c6c8c8;
+	height:100%;}
+
+h1,h2,h3,h4{
+	font-weight: 300;
+	color: #F4F4F4;}
+h1{
+	text-align: center;
+	border-bottom: 1px solid #595b5b;}
+.headerContainer{}
+	h2,h3,h4{
+		font-weight: 300;
+		color: #F4F4F4;
+		text-align: left;}
 
 /*************************/
 
